@@ -23,3 +23,7 @@ x86/
 *.user
 *.suo
 *.sln.docstates
+
+*.vcxproj
+*.vcxproj.filters
+*.sln

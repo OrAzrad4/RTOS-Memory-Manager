@@ -40,13 +40,13 @@ Both allocators operate on statically allocated memory buffers.
 #include "memory_pool.h"
 
 int main() {
-    // --- Dynamic Allocator ---
+    // Dynamic Allocator 
     dyn_alloc_init();
     void* buffer = dyn_alloc(128);
     dyn_free(buffer);
     buffer = NULL; // Prevent dangling pointers
 
-    // --- Fixed-Size Pool ---
+    // Fixed-Size Pool 
     pool_init();
     void* packet = pool_alloc();
     pool_free(packet);
